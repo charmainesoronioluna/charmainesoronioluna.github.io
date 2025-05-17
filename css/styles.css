@@ -11044,3 +11044,12 @@ html {
 .copyright {
   background-color: #0d3c68;
 }
+
+.div-ul-container{
+  text-align: center;
+}
+
+.ul-container{
+  display: inline-block;
+  text-align: left;
+}
