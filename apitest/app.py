@@ -6,7 +6,7 @@ users = {}
 
 @app.route('/')
 def index():
-    return render_template("/apitest/apitestui.html")
+    return render_template("apitestui.html")
 
 @app.route('/api/users', methods=['GET'])
 def get_users():
@@ -33,3 +33,5 @@ def delete_user(user_id):
         deleted = users.pop(user_id)
         return jsonify(deleted)
     return jsonify({"error": "User not found"}), 404
+
+app.run(debug=True, host='0.0.0.0', port=5000)
